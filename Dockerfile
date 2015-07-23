@@ -33,10 +33,4 @@ RUN     mkdir -p /incubator-zeppelin/run
 VOLUME ["/incubator-zeppelin/notebook", "/incubator-zeppelin/logs"]
 EXPOSE 8080 8081
 
-# update boot script
-COPY bootstrap.sh /etc/bootstrap.sh
-RUN chown root.root /etc/bootstrap.sh
-RUN chmod 700 /etc/bootstrap.sh
- 
-#ENTRYPOINT ["/etc/bootstrap.sh"]
 CMD ["/incubator-zeppelin/bin/zeppelin.sh"]
