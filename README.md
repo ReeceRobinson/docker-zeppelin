@@ -13,7 +13,7 @@ This is for people who want a working Apache Zeppelin browser experience for wor
 
 # Running the image
 
-`docker run -d --name zeppelin -v /[your notebook path]:/incubator-zeppelin/notebook -p 8080:8080 -p 8081:8081 reecerobinson/docker-zeppelin:latest`
+`docker run -d --name zeppelin -v /[your notebook path]:/incubator-zeppelin/notebook -p 8080:8080 -p 8081:8081 -p 4040:4040 reecerobinson/docker-zeppelin:latest`
 
 In your browser go to `http://[host]:8080` to view the notebook.
 
