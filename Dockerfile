@@ -31,6 +31,6 @@ RUN 	cd incubator-zeppelin && mvn package -Pspark-1.4 -Dhadoop.version=2.6.0 -Ph
 RUN     mkdir -p /incubator-zeppelin/logs
 RUN     mkdir -p /incubator-zeppelin/run
 VOLUME ["/incubator-zeppelin/notebook", "/incubator-zeppelin/logs"]
-EXPOSE 8080 8081
+EXPOSE 8080 8081 4040
 
 CMD ["/incubator-zeppelin/bin/zeppelin.sh"]
