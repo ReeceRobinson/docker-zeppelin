@@ -19,4 +19,4 @@ In your browser go to `http://[host]:8080` to view the notebook.
 
 # Versions
 
-Zeppelin 0.6, Apache Spark 1.4.1
+Zeppelin 0.6 SNAPSHOT, Apache Spark 1.5.0
